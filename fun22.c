@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void fibonacci()
+{
+    int n, i, a = 1, b = 1 , c;
+
+    printf("enter n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++)
+    {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+}
+
+void main()
+{
+    fibonacci();
+}
